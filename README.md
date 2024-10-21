@@ -2,7 +2,6 @@
 
 A flash card learning app built with Python and Tkinter for mastering Swedish vocabulary. Users can flip cards for translations, track progress, and save their learning in a CSV file.
 
-
 ![front_card_swedish.png](front_card_swedish.png)
 ![back_card_english.png](back_card_english.png)
 ![restart_learning_screen.png](restart_learning_screen.png)
