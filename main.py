@@ -13,10 +13,11 @@ Description:
     Appropriate error handling has been implemented for file operations to ensure smooth functionality when loading
     or saving progress.
 
-Version: 1.0
+Version: 1.1
 
 Changelog:
-    - 1.0:  Initial version with core features including random word selection, card flipping,
+    - 1.1 (24 Oct 2024): Updated the UI to improve the button press interaction.
+    - 1.0 (19 Oct 2024): Initial version with core features including random word selection, card flipping,
             tracking of correct guesses, saving progress to a CSV file, basic error handling,
             and the option for users to restart their learning journey after mastering all words.
 """
@@ -198,12 +199,12 @@ canvas.grid(row=0, column=0, columnspan=2)
 
 # Button for wrong answers
 wrong_img = PhotoImage(file=WRONG_BUTTON) # Load the image for wrong button
-wrong_button = Button(image=wrong_img, command=next_card, highlightthickness=0, borderwidth=0)
+wrong_button = Button(image=wrong_img, command=next_card, highlightthickness=0, borderwidth=0, bd=0, activebackground=BACKGROUND_COLOR)
 wrong_button.grid(row=1, column=0)
 
 # Button for correct answers
 right_img = PhotoImage(file=RIGHT_BUTTON) # Load the image for right button
-right_button = Button(image=right_img, command=known_word, highlightthickness=0, borderwidth=0)
+right_button = Button(image=right_img, command=known_word, highlightthickness=0, borderwidth=0, bd=0, activebackground=BACKGROUND_COLOR)
 right_button.grid(row=1, column=1)
 
 # Create a button to reset the progress and restart the learning session
